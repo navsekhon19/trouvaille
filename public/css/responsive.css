@@ -1,0 +1,58 @@
+@media (max-width: 576px) {
+    .filters-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .filters {
+        flex-wrap: wrap;
+        overflow-x: auto;   
+    }
+    .tax-toggle {
+        justify-content: flex-start;
+        margin-top: 0.5rem;
+    }
+    .search-inp,
+    .search-btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+        padding: 0.3rem 0.8rem !important;
+        font-size: 0.85rem !important;
+    }
+    .edit-btn,
+    .delete-btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    .reviews-row .card {
+        flex: 1 1 180px;
+        margin-right: 0.5rem;
+    }
+    .starability-result, 
+    .starability-slot label {
+        transform: scale(0.6);
+    }
+    .reviews-row .card-text, 
+    .reviews-row .card-title {
+        font-size: 0.8rem;
+    }
+    #map {
+        height: 250px;
+    }   
+};
+
+@media (max-width: 768px) {
+    .reviews-row .card {
+        flex: 1 1 220px;
+        margin-right: 0.5rem;
+    }
+    .starability-result, 
+    .starability-slot label {
+        transform: scale(0.7);
+    }
+    .reviews-row .card-text, 
+    .reviews-row .card-title {
+        font-size: 0.85rem;
+    }
+};
+

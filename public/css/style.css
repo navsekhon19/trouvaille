@@ -1,0 +1,250 @@
+body{
+     font-family: "Plus Jakarta Sans", sans-serif !important;
+     display: flex;
+     flex-direction: column;
+     min-height: 100vh;
+}
+.container {
+    flex: 1;
+}
+.navbar {
+    height : 5rem;
+    background-color: white;
+}
+
+.fa-compass {
+    color : #fe424d;
+    font-size : 2rem;
+}
+
+.nav-link {
+    color : #222222 !important ;
+}
+.navbar-collapse {
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    border-radius: 0.25rem;
+     
+}
+.navbar-collapse .nav-link {
+    color: black;
+    margin: 0.25rem 0;
+}
+
+/* Footer */
+.f-info-links a {
+    text-decoration :none;
+    color :#222222;
+}
+
+.f-info-links a:hover {
+    text-decoration:underline ;
+}
+
+.f-info-links , .f-info-socials , .f-info-brand{
+    width : 100%;
+    display : flex;
+    align-items :center;
+    justify-content : center;
+}
+.f-info-socials i {
+    font-size : 1.2rem;
+    margin-right : 1rem;
+}
+
+.f-info{
+    text-align :center;
+    height : 8rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+/* Cards */
+.listing-card {
+    border: none !important;
+    margin-bottom: 2rem;
+}
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+.card-body {
+    padding: 0 !important;
+}
+.card-text p {
+    font-weight: 400;
+}
+.listing-link {
+    text-decoration: none;
+}
+/* Card Effect */
+.card-img-overlay {
+    opacity: 0;
+}
+.card-img-overlay:hover {
+    opacity: 0.2;
+    background-color: white;
+} 
+/* New Page */
+.add-btn {
+    background-color: #fe424d !important;
+    border: none !important;
+} 
+/* Edit Page*/
+.edit-btn {
+   background-color: #fe424d !important;
+    border: none !important; 
+}
+
+.img-preview {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+/* Show Page */
+.show-img {
+    height :30vh;
+    width: 100% ;
+    object-fit: cover ;
+}
+.edit-btn, .delete-btn {
+    display: inline-block;
+    margin-right: 1px;
+    vertical-align: middle;
+    min-width: 100px;
+}
+
+.btns{
+    display: flex;
+}
+.show-card{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Map */
+#map { 
+    height: 400px;
+    width: 80vh;
+    max-width: 100%;
+}
+@media (max-width: 576px) {
+    #map {
+        height: 250px ;
+    }
+}
+
+/* Filters */
+.filters-container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    flex-wrap: wrap !important;
+    margin-top: 1rem !important;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    overflow-x: auto ;
+    -webkit-overflow-scrolling: touch ;
+}
+.filter {
+    text-align: center;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    opacity: 0.7;
+}
+.filter:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+.filter p {
+    font-size: 0.8rem;
+}
+.filter a {
+    color: #222222;
+    text-decoration: none;
+}
+.filters-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Tax button */
+.tax-info {
+    display: none;
+}
+.tax-toggle {
+  border: 1px solid #000;
+  border-radius: 0.75rem;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  max-width: 100%;
+  height: auto;
+  line-height: 1.2;
+  font-size: 1rem;
+  white-space: normal;
+  word-break: break-word;
+  margin-top: 1rem;
+}
+
+/* Search button */
+.search-btn {
+    background-color: #fe424d !important; 
+    color: #fff !important;
+    border-radius: 25px !important;
+    padding: 0 1rem 0 1rem !important;
+}
+.search-btn:hover {
+    background-color: #fe424d !important;
+    color: #fff !important;
+}
+.search-btn i {
+    display: inline !important;
+    margin-right: 0.5rem !important;
+}
+.search-inp {
+    border-radius: 25px !important;
+    padding: 0.5rem 3rem 0.5rem 3rem !important;
+    font-size: 1rem !important;
+}
+
+/* Reviews Row Container */
+.reviews-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+    margin-left: 0;
+}
+/* Review Cards */
+.reviews-row .card {
+    flex: 1 1 250px;
+    max-width: 300px;
+    box-sizing: border-box;
+    margin-right: 1rem;
+}
+/* Stars (Rating) */
+.starability-result, 
+.starability-slot label {
+    transform: scale(0.8);
+    transform-origin: left;
+}
+/* Comments textarea inside cards */
+.reviews-row .card-text, 
+.reviews-row .card-title {
+    font-size: 0.9rem;
+}
